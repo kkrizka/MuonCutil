@@ -5,9 +5,9 @@
   <!--whether hits are 1D strip hits-->
   <parameter name="IsStrip" type="bool">false </parameter>
   <!--resolution in direction of u-->
-  <parameter name="ResolutionU" type="float"> 0.003 </parameter>
+  <parameter name="ResolutionU" type="float"> 0.007 </parameter>
   <!--resolution in direction of v-->
-  <parameter name="ResolutionV" type="float"> 0.003 </parameter>
+  <parameter name="ResolutionV" type="float"> 0.007 </parameter>
   <!--Name of the Input SimTrackerHit collection-->
   <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> VertexBarrelCollection </parameter>
   <!--Name of TrackerHit SimTrackHit relation collection-->
@@ -34,9 +34,9 @@
   <!--whether hits are 1D strip hits-->
   <parameter name="IsStrip" type="bool">false </parameter>
   <!--resolution in direction of u-->
-  <parameter name="ResolutionU" type="float"> 0.003 </parameter>
+  <parameter name="ResolutionU" type="float"> 0.007 </parameter>
   <!--resolution in direction of v-->
-  <parameter name="ResolutionV" type="float"> 0.003 </parameter>
+  <parameter name="ResolutionV" type="float"> 0.007 </parameter>
   <!--Name of the Input SimTrackerHit collection-->
   <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> VertexEndcapCollection </parameter>
   <!--Name of TrackerHit SimTrackHit relation collection-->
@@ -63,9 +63,9 @@
   <!--whether hits are 1D strip hits-->
   <parameter name="IsStrip" type="bool"> false </parameter>
   <!--resolution in direction of u-->
-  <parameter name="ResolutionU" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionU" type="float"> 0.014 </parameter>
   <!--resolution in direction of v-->
-  <parameter name="ResolutionV" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionV" type="float"> 0.014 </parameter>
   <!--Name of the Input SimTrackerHit collection-->
   <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> InnerTrackerBarrelCollection </parameter>
   <!--Name of TrackerHit SimTrackHit relation collection-->
@@ -92,9 +92,9 @@
   <!--whether hits are 1D strip hits-->
   <parameter name="IsStrip" type="bool"> false </parameter>
   <!--resolution in direction of u-->
-  <parameter name="ResolutionU" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionU" type="float"> 0.014 </parameter>
   <!--resolution in direction of v-->
-  <parameter name="ResolutionV" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionV" type="float"> 0.014 </parameter>
   <!--Name of the Input SimTrackerHit collection-->
   <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> InnerTrackerEndcapCollection </parameter>
   <!--Name of TrackerHit SimTrackHit relation collection-->
@@ -121,9 +121,9 @@
   <!--whether hits are 1D strip hits-->
   <parameter name="IsStrip" type="bool"> false </parameter>
   <!--resolution in direction of u-->
-  <parameter name="ResolutionU" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionU" type="float"> 0.014 </parameter>
   <!--resolution in direction of v-->
-  <parameter name="ResolutionV" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionV" type="float"> 0.014 </parameter>
   <!--Name of the Input SimTrackerHit collection-->
   <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> OuterTrackerBarrelCollection </parameter>
   <!--Name of TrackerHit SimTrackHit relation collection-->
@@ -150,9 +150,9 @@
   <!--whether hits are 1D strip hits-->
   <parameter name="IsStrip" type="bool"> false </parameter>
   <!--resolution in direction of u-->
-  <parameter name="ResolutionU" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionU" type="float"> 0.014 </parameter>
   <!--resolution in direction of v-->
-  <parameter name="ResolutionV" type="float"> 0.005 </parameter>
+  <parameter name="ResolutionV" type="float"> 0.014 </parameter>
   <!--Name of the Input SimTrackerHit collection-->
   <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> OuterTrackerEndcapCollection </parameter>
   <!--Name of TrackerHit SimTrackHit relation collection-->
