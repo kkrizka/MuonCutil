@@ -10,7 +10,7 @@ import datetime
 import platform
 
 # --------- ilcsoft release version ------------------------------------------
-ilcsoft_release='v02-02-MC'
+ilcsoft_release='v02-03-MC'
 # ----------------------------------------------------------------------------
 
 #-----------------------
@@ -153,7 +153,7 @@ Eigen_version = "3.3.7"
 
 # -------------------------------------------
 
-LCIO_version = "v02-15-03"
+LCIO_version = "v02-15-04-MC"
 
 GEAR_version = "v01-09"
 
@@ -176,7 +176,7 @@ DDKalTest_version = "v01-06"
 
 MarlinTrk_version = "v02-08"
 
-MarlinTrkProcessors_version = "v02-11-MC"
+MarlinTrkProcessors_version = "v02-12-MC"
 
 Clupatra_version = "v01-03"
 
@@ -188,7 +188,7 @@ FCalClusterer_version = "v01-00-01"
 
 ForwardTracking_version = "v01-14-MC"
 
-ConformalTracking_version = "v01-10-MC"
+ConformalTracking_version = "v01-11-MC"
 
 LICH_version = "v00-01"
 
