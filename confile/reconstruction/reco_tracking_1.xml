@@ -136,7 +136,7 @@
     <!--InitializeDD4hep reads a compact xml file and initializes the dd4hep::Detector object-->
     <!--Name of the DD4hep compact xml file to load-->
     <parameter name="DD4hepXMLFile" type="string">
-      /opt/ilcsoft/v02-02-MC/detector-simulation/geometries/MuColl_v0/MuColl_v0.xml
+      /opt/ilcsoft/v02-03-MC/detector-simulation/geometries/MuColl_v0/MuColl_v0.xml
     </parameter>
     <!--Alternate name for EncodingStringParameterName-->
     <!--If given, the Compact File parameter of that name will be used as argument to LCTrackerCellID::set_encoding_string()-->
