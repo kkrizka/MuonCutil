@@ -15,7 +15,7 @@ SIM.enableGun = False
 ## InputFiles for simulation .stdhep, .slcio, .HEPEvt, .hepevt, .hepmc files are supported
 SIM.inputFiles = ["/muoncdata/data/750GeV/events/mumi-1e3x500-26m-lowth-excl_25ns_nEkin150MeV/c0.slcio"]
 ## HepMC reader v3 is not supported
-SIM. hepmc3.useHepMC3 = False
+SIM.hepmc3.useHepMC3 = False
 ## Macro file to execute for runType 'run' or 'vis'
 SIM.macroFile = ""
 ## number of events to simulate, used in batch mode
