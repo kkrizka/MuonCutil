@@ -1,0 +1,110 @@
+#######################################################################################################################
+v02-04-MC
+#######################################################################################################################
+
+External software
+
+    Geant4 10.6.3
+
+Packages changes wrt. to v02-03-MC
+
+    Downgrade DD4Hep and DD4hepExamples to v01-13-01 as workaround for issue 759
+    Add SIM.hepmc3.useHepMC3 = False to steering file for ddsim
+
+#######################################################################################################################
+v02-03-MC
+#######################################################################################################################
+
+External software
+
+    ROOT_version = "6.22.02-3"
+
+Packages changed wrt. to v02-02-MC
+
+    MarlinTrkProcessors → v02-12-MC
+        Double-layer filtering + Splitting by layers
+            Introduces a new FilterDoubleLayerHits processor for filtering of RecHits based on their angular alignment within a double-layer.
+            Updates the SplitCollectionByLayer processor to support custom layer combinations.
+        Extra quality cuts in Refitter
+            Minimal Chi2/NDF
+            Minimal number of hits in arbitrary combinations of tracker subdetectors
+    detector-simulation→ v01-00-MC
+        Added a Python version of the MARS->SLCIO conversion script with configurable pdgIds
+        Included antineutrons in Ekin cut. Fixed bug with cutting on Ekin before reading the MARS values
+        Added reduced mod4 and mod5 geometries with Trackers only for faster simulation
+        Added mod5 geometry with 3.57T magnetic field and rearranged VTX endcaps
+
+        Added mod6 version of the geometry to be frozen for Snowmass → MuColl_v0: Copy of CLIC_o3_v14_mod4 with the MAP magnetic field
+    ConformalTracking → v01-11-MC
+        Added timing histograms for each tracking step
+        Added support for excluding collections used for initial seed hit creation. Added per-step debug histograms
+        Separated step debugging plots with an own configuration parameter 
+    lcio →v02-15-04-MC
+        fix nan's in jet 4-momenta (delphes2lcio)
+        delphes: fix PDG in PID objects of neutral hadrons
+        add optional extra PFO collections in delphes2lcio
+        Python3 compatibility of Reader class 
+
+Know problems
+
+    The paths of the geometry in the MuonCutil/confile/* are wrongs.
+        Use the correct ones: /opt/ilcsoft/v02-03-MC/detector-simulation/geometries/MuColl_v0/MuColl_v0.xml
+    Default value for ddsim is to use HepMC3 Helper reader which is not supported by now. 
+        Use the command line option for ddsim: --hepmc3.useHepMC3 false or put SIM.hepmc3.useHepMC3 = False in your steering file
+    Using hepmc input file for ddsim produces a fatal exception likes this one: (see issue 759 in DD4Hep)
+
+    G4DecayTable::SelectADecayChannel :: no possible DecayChannel mu+
+
+    -------- EEEE ------- G4Exception-START -------- EEEE -------
+    *** G4Exception : DECAY003
+    issued by : G4Decay::DoIt
+    Can not determine decay channel for mu+
+    mass of dynamic particle: 0.00010566 (GEV)
+    dacay table has 1 entries
+    0: BR 1, IsOK? 0, --> e+ + nu_e + anti_nu_mu
+
+    *** Fatal Exception *** core dump ***
+
+        At the moment the only workaround is to downgrade the version of DD4Hep from v01-14 to v01-13-01
+
+#######################################################################################################################
+v02-02-MC
+#######################################################################################################################
+
+External software
+
+    ROOT_version = "6.22.02"
+    Boost_version = "1.69.0"
+
+    Geant4 version = "10.6.1"
+    clhep version = "2.4.1"
+
+Official ILCSoft release v02-02 plus
+
+    MarlinTrkProcessors → v02-11-MC
+        Added time smearing to the DDPlanarDigiProcessor
+        Changed histogram range suitable for picosecond-level time resolution
+        Introduced a time window for digitized hits in the DDPlanarDigiProcessor
+        Made TOF compensation persistent in the DDPlanarDigiProcessor to match the behaviour in DDCaloDigi
+    lcgeo → v00-16-06-MC
+        Added a modified version of the Generic Cal Endcap without cutout
+        Added support of Z segmentation to ZPlanarTracker class
+        Revoked ZPlanarTracker. Implemented Z segmentation in a separate plugin: ZSegmentedPlanarTracker
+    ConformalTracking → v01-10-MC
+        Add the possibility to do a regional tracking (define a theta range)
+    LCTuple → v01-12-02-MC
+        Add branch for hit times
+    Overlay → v00-22-02-MC
+        Added a flag disabling the merging of MCParticles
+        OverlayTiming: Skipping merging of collections that have no integration times configured
+        OverlayTimingGeneric: Added option to make integration times symmetric
+        Optimized merging for the BIB from Muon Collider
+        Added support for lower/upper integration time boundaries in OverlayTimingGeneric
+    detector-simulation
+         Added mod2 version of the CLIC geometry with reduced gap between ECAL Endcaps and nozzles
+        Added mod3 geometry with the vertex detector dimnesions similar to the MAP geometry
+        Added CLIC_o3_v14_mod4 geometry with VTXB segmented along Z
+        Adjusted the class of the Z-segmented VXD barrel in CLIC_o3_v14_mod4
+        Added a GDML version of the CLIC_o3_v14_mod4 geometry: nozzles + yoke
+
+
