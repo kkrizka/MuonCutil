@@ -232,7 +232,7 @@ PathFinder_version = "v00-06-01"
 
 MarlinTPC_version = "v01-07"
 
-LCTuple_version = "v01-12-02-MC"
+LCTuple_version = "v01-13-MC"
 
 BBQ_version = "v00-01-04"
 
@@ -243,7 +243,7 @@ Garlic_version = "v03-01"
 DD4hep_version = "v01-13-01"
 DD4hepExamples_version = "v01-13-01"
 
-lcgeo_version = "v00-16-06-MC"
+lcgeo_version = "v00-16-07-MC"
 
 Physsim_version = "v00-04-01"
 
