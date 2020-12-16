@@ -1,4 +1,37 @@
 #######################################################################################################################
+v02-05-MC
+#######################################################################################################################
+
+External software
+
+    Root 6.22.02-4 (Custom building)
+
+Packages changes wrt. to v02-04-MC
+
+    LCTuple → v01-13-MC
+        Add information for tracker 
+            Added track hits to the tracks branches
+            Added the number of track hits
+
+    lcgeo → v00-16-07-MC
+        Yoke05_Barrel driver
+            Removed slices DetElement construction
+            Moved layer DetElement construction to external loop: fixes the DetElement hierarchy.
+            This fixes the access to the DetElement given a CellID in our reconstruction. Related issue: iLCSoft/ILDConfig#88
+        Add INSTALL_COMPACT_FILES option (default: OFF) to copy compact files to install area
+        python3 compatibility
+        For muoncollider:
+            Fixed double thickness in the negative side of TrackerEndcapSupport
+            Recovered the double thickness bug in TrackerEndcapSupport_o1_v01 for backward compatibility
+
+    detector-simulation → v01-01-MC
+        Added v2 of the frozen geometry with fixed endcap tracker support asymmetry
+
+    DDMarlinPandora → v00-12-MC
+        Added new processor (DDCaloDigi_BIB) for BIB subtraction in calorimeter cells, compatible with 1.5TeV BIB
+
+
+#######################################################################################################################
 v02-04-MC
 #######################################################################################################################
 
@@ -33,7 +66,6 @@ Packages changed wrt. to v02-02-MC
         Included antineutrons in Ekin cut. Fixed bug with cutting on Ekin before reading the MARS values
         Added reduced mod4 and mod5 geometries with Trackers only for faster simulation
         Added mod5 geometry with 3.57T magnetic field and rearranged VTX endcaps
-
         Added mod6 version of the geometry to be frozen for Snowmass → MuColl_v0: Copy of CLIC_o3_v14_mod4 with the MAP magnetic field
     ConformalTracking → v01-11-MC
         Added timing histograms for each tracking step
@@ -75,7 +107,6 @@ External software
 
     ROOT_version = "6.22.02"
     Boost_version = "1.69.0"
-
     Geant4 version = "10.6.1"
     clhep version = "2.4.1"
 
