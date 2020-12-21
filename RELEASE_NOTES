@@ -13,7 +13,7 @@ Packages changes wrt. to v02-04-MC
             Added track hits to the tracks branches
             Added the number of track hits
 
-    lcgeo → v00-16-07-MC
+    lcgeo → v00-16-08-MC
         Yoke05_Barrel driver
             Removed slices DetElement construction
             Moved layer DetElement construction to external loop: fixes the DetElement hierarchy.
