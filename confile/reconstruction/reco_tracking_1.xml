@@ -239,7 +239,7 @@
     <!--Name of the Input SimTrackerHit collection-->
     <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> VertexBarrelCollection </parameter>
     <!--Name of TrackerHit SimTrackHit relation collection-->
-    <parameter name="SimTrkHitRelCollection" type="string" lcioOutType="LCRelation"> VBTrackerHitRelations </parameter>
+    <parameter name="SimTrkHitRelCollection" type="string" lcioOutType="LCRelation"> VBTrackerHitsRelations </parameter>
     <!--Name of the TrackerHit output collection-->
     <parameter name="TrackerHitCollectionName" type="string" lcioOutType="TrackerHitPlane"> VBTrackerHits </parameter>
     <!--resolution in time-->
@@ -268,7 +268,7 @@
     <!--Name of the Input SimTrackerHit collection-->
     <parameter name="SimTrackHitCollectionName" type="string" lcioInType="SimTrackerHit"> VertexEndcapCollection </parameter>
     <!--Name of TrackerHit SimTrackHit relation collection-->
-    <parameter name="SimTrkHitRelCollection" type="string" lcioOutType="LCRelation"> VETrackerHitRelations </parameter>
+    <parameter name="SimTrkHitRelCollection" type="string" lcioOutType="LCRelation"> VETrackerHitsRelations </parameter>
     <!--Name of the TrackerHit output collection-->
     <parameter name="TrackerHitCollectionName" type="string" lcioOutType="TrackerHitPlane"> VETrackerHits </parameter>
     <!--resolution in time-->
