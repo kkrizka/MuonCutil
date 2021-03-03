@@ -21,7 +21,7 @@ ilcsoft_release='muonc'
 #    print "******************* use_cpp11", use_cpp11
 
 # which cxx standard to use
-cxx_standard = 14
+cxx_standard = 17
 
 afsPath = None
 try:
