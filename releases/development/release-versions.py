@@ -145,7 +145,7 @@ FastJetcontrib_version = "1.025"
 
 CED_version = "v01-09-03"
 
-SIO_version = "v00-00-02"
+SIO_version = "v00-01"
 
 Boost_version = "1.73.0"
 
@@ -153,7 +153,7 @@ Eigen_version = "3.3.7"
 
 # -------------------------------------------
 
-LCIO_version = "v02-15-04-MC"
+LCIO_version = "v02-16-01-MC"
 
 GEAR_version = "v01-09"
 
@@ -200,13 +200,13 @@ LCCD_version = "v01-05"
 
 RAIDA_version = "v01-09"
 
-MarlinUtil_version = "v01-15-01"
+MarlinUtil_version = "v01-16"
 
 Marlin_version = "v01-17-01"
 
 MarlinDD4hep_version = "v00-06"
 
-MarlinReco_version = "v01-28"
+MarlinReco_version = "v01-31"
 
 ILDPerformance_version = "v01-08"
 
@@ -224,7 +224,7 @@ PandoraPFANew_version   = "v03-13-02"
 DDMarlinPandora_version = "v00-12-MC"
 PandoraAnalysis_version = "v02-00-01"
 
-CEDViewer_version = "v01-17-01"
+CEDViewer_version = "v01-18"
 
 Overlay_version = "master"
 
