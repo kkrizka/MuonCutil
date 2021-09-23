@@ -247,8 +247,7 @@ lcgeo_version = "v00-16-08-MC"
 
 Physsim_version = "v00-04-01"
 
-#ACTS_version = "v12.0.1"
-ACTS_version = "v9.2.0-MCC"
+ACTS_version = "v13.0.0-MCC"
 
 ACTSTracking_version = "main"
 
