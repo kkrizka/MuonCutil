@@ -249,7 +249,7 @@ Physsim_version = "v00-04-01"
 
 ACTS_version = "v13.0.0-MCC"
 
-ACTSTracking_version = "release"
+ACTSTracking_version = "main"
 
 # xerces-c (needed by geant4 for building gdml support - required by mokka)
 XercesC_version = "v3.2.2"
