@@ -221,7 +221,9 @@ MarlinKinfit_version = "v00-06"
 MarlinKinfitProcessors_version = "v00-04-02"
 
 PandoraPFANew_version   = "v03-13-02"
-DDMarlinPandora_version = "v00-12-MC"
+
+DDMarlinPandora_version = "master"
+
 PandoraAnalysis_version = "v02-00-01"
 
 CEDViewer_version = "v01-18"
