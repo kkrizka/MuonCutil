@@ -176,7 +176,7 @@ DDKalTest_version = "v01-06"
 
 MarlinTrk_version = "v02-08"
 
-MarlinTrkProcessors_version = "master"
+MarlinTrkProcessors_version = "v02-13-MC"
 
 Clupatra_version = "v01-03"
 
@@ -188,7 +188,7 @@ FCalClusterer_version = "v01-00-01"
 
 ForwardTracking_version = "v01-14-MC"
 
-ConformalTracking_version = "master"
+ConformalTracking_version = "v01-12-MC"
 
 LICH_version = "v00-01"
 
@@ -222,19 +222,19 @@ MarlinKinfitProcessors_version = "v00-04-02"
 
 PandoraPFANew_version   = "v03-13-02"
 
-DDMarlinPandora_version = "master"
+DDMarlinPandora_version = "v00-13-MC"
 
 PandoraAnalysis_version = "v02-00-01"
 
 CEDViewer_version = "v01-18"
 
-Overlay_version = "master"
+Overlay_version = "v00-23-MC"
 
 PathFinder_version = "v00-06-01"
 
 MarlinTPC_version = "v01-07"
 
-LCTuple_version = "master"
+LCTuple_version = "v01-14-MC"
 
 BBQ_version = "v00-01-04"
 
@@ -251,7 +251,7 @@ Physsim_version = "v00-04-01"
 
 ACTS_version = "v13.0.0-MCC"
 
-ACTSTracking_version = "main"
+ACTSTracking_version = "v1.0.0"
 
 # xerces-c (needed by geant4 for building gdml support - required by mokka)
 XercesC_version = "v3.2.2"
