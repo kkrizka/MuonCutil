@@ -153,7 +153,7 @@ Eigen_version = "3.3.7"
 
 # -------------------------------------------
 
-LCIO_version = "v02-16-01-MC"
+LCIO_version = "track_holes"
 
 GEAR_version = "v01-09"
 
