@@ -153,7 +153,7 @@ Eigen_version = "3.3.7"
 
 # -------------------------------------------
 
-LCIO_version = "v02-16-01-MC"
+LCIO_version = "track_holes"
 
 GEAR_version = "v01-09"
 
@@ -249,9 +249,9 @@ lcgeo_version = "v00-16-08-MC"
 
 Physsim_version = "v00-04-01"
 
-ACTS_version = "v13.0.0-MCC"
+ACTS_version = "v13.0.0"
 
-ACTSTracking_version = "v1.0.0"
+ACTSTracking_version = "d824821ac553aac51c5692639eb4a8d901ba4e38"
 
 # xerces-c (needed by geant4 for building gdml support - required by mokka)
 XercesC_version = "v3.2.2"
