@@ -176,7 +176,7 @@ DDKalTest_version = "v01-06"
 
 MarlinTrk_version = "v02-08"
 
-MarlinTrkProcessors_version = "v02-13-MC"
+MarlinTrkProcessors_version = "v02-14-MC"
 
 Clupatra_version = "v01-03"
 
@@ -249,9 +249,9 @@ lcgeo_version = "v00-16-08-MC"
 
 Physsim_version = "v00-04-01"
 
-ACTS_version = "v13.0.0-MCC"
+ACTS_version = "v13.0.0"
 
-ACTSTracking_version = "v1.0.0"
+ACTSTracking_version = "v1.1.0"
 
 # xerces-c (needed by geant4 for building gdml support - required by mokka)
 XercesC_version = "v3.2.2"
